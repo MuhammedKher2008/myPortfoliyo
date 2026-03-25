@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <div className="row my-5">
       <div className="col-md-12 text-center">
-        <img width={100} src={mylogo} alt="" />
+        <img loading="lazy"width={100} src={mylogo} alt="" />
       </div>
       <div className="col-md-12 text-center mt-4 mb-4 ">
         <div className="d-none d-md-flex align-items-center justify-content-center gap-3">
@@ -47,11 +47,7 @@ export default function Footer() {
             </a>
           </li>
 
-          <li>
-            <a href="#" style={linkStyle}>
-              {translations[lang].Education}
-            </a>
-          </li>
+        
 
           <li>
             <a href="#" style={linkStyle}>

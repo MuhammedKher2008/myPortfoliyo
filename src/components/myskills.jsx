@@ -5,7 +5,7 @@ import SkillsSlider2 from "./skillsSlider2";
 export default function MySkills({MySkillsRef}) {
   const { lang, translations } = useContext(LangContext);
   return (
-    <div ref={MySkillsRef} className="row mt-5" style={{ border: "2px solid #202736ff" }}>
+    <div ref={MySkillsRef} className="row mt-5 p-4 shadow-lg" style={{ border: "1px solid #2a3245", borderRadius: "16px", background: "#191f2b" }}> {/* Added Bootstrap padding, shadow, and custom premium borders for consistency */}
       <div className="row">
         <div className="col-md-12 mt-5">
           <div className="d-flex mt-4 align-items-center justify-content-center">
@@ -61,7 +61,7 @@ export default function MySkills({MySkillsRef}) {
                 <p className="text-capitalize">front-end : </p>
                 <span className="ms-2" style={{ color: "#8f8f92" }}>
                   {" "}
-                  HTML , CSS , JAVASCRIPT , REACT , TALWIND
+                  HTML , CSS , JAVASCRIPT , TYPESCRIPT , REACT , BOOTSTRAP
                 </span>
               </div>
             </li>
@@ -70,7 +70,7 @@ export default function MySkills({MySkillsRef}) {
                 <p className="text-capitalize">Back-End : </p>
                 <span className="ms-2" style={{ color: "#8f8f92" }}>
                   {" "}
-                  PHP , PYTHON , LARAVEL , NODE.JS
+                  PHP  , LARAVEL
                 </span>
               </div>
             </li>
@@ -79,7 +79,7 @@ export default function MySkills({MySkillsRef}) {
                 <p className="text-capitalize">Databases : </p>
                 <span className="ms-2" style={{ color: "#8f8f92" }}>
                   {" "}
-                  MySQL , MongoDB
+                  MySQL 
                 </span>
               </div>
             </li>
@@ -97,7 +97,7 @@ export default function MySkills({MySkillsRef}) {
                 <p className="text-capitalize">Others : </p>
                 <span className="ms-2" style={{ color: "#8f8f92" }}>
                   {" "}
-                  RESTful APIs , Marketing , video edit , REACT Native{" "}
+                  RESTful APIs 
                 </span>
               </div>
             </li>

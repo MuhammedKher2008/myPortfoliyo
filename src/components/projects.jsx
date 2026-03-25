@@ -1,11 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import img1 from "../assets/img-1.png";
 import { useContext } from "react";
 import { LangContext } from "../contexts/LangContexts";
-import proje1 from "../assets/proje1.png"
-import proje2 from "../assets/proje2.png"
-import proje3 from "../assets/proje3.png"
+
+import codeart from "../assets/code_art.png"
+import eiser from "../assets/eiser.png"
+import invent from "../assets/invent.png"
+import kiddy from "../assets/kiddy.png"
+import linea from "../assets/linea.png"
+import visible from "../assets/visible.png"
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -19,15 +22,16 @@ export default function Projects({ProjectsRef}) {
       client: translations[lang].project1c,
       time: translations[lang].project1time,
       tech: "React, Vite, JavaScript, CSS",
-      image: proje3,
+      image: codeart,
     },
+
     {
       title: translations[lang].project2t,
       desc: translations[lang].project2d,
       client: translations[lang].project2c,
       time: translations[lang].project2time,
       tech: "React, Node.js, Vite, JavaScript, CSS",
-      image: proje2,
+      image: eiser,
     },
     {
       title: translations[lang].project3t,
@@ -35,11 +39,37 @@ export default function Projects({ProjectsRef}) {
       client: translations[lang].project3c,
       time: translations[lang].project3time,
       tech: "React, Node.js, Vite, JavaScript, CSS",
-      image: proje1,
+      image: invent,
     },
+    {
+      title: translations[lang].project4t,
+      desc: translations[lang].project4d,
+      client: translations[lang].project4c,
+      time: translations[lang].project4time,
+      tech: "React, Node.js, Vite, JavaScript, CSS",
+      image: kiddy,
+    },
+    {
+      title: translations[lang].project5t,
+      desc: translations[lang].project5d,
+      client: translations[lang].project5c,
+      time: translations[lang].project5time,
+      tech: "React, Node.js, Vite, JavaScript, CSS",
+      image: linea,
+    },
+
+    {
+      title: translations[lang].project7t,
+      desc: translations[lang].project7d,
+      client: translations[lang].project7c,
+      time: translations[lang].project7time,
+      tech: "React, Node.js, Vite, JavaScript, CSS",
+      image: visible,
+    },
+  
   ];
   return (
-    <div ref={ProjectsRef} className="row mt-5"  style={{ border: "2px solid #202736ff" }}>
+    <div ref={ProjectsRef} className="row mt-5 p-4 shadow-lg" style={{ border: "1px solid #2a3245", borderRadius: "16px", background: "#191f2b" }}> {/* Added Bootstrap padding, shadow, and custom borders */}
         <div className="row">
             <div className="col-md-12">
                  <div className="d-flex mt-4 align-items-center ms-5 mb-3 ">

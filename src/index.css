@@ -36,42 +36,42 @@ body {
 
 .card-box {
   background: #202736;
-  border: 2px solid #26ade1;
-  border-radius: 12px;
+  border: 1px solid rgba(38, 173, 225, 0.2);
+  border-radius: 16px; /* Enhanced border radius */
   padding: 40px;
   color: #fcfdfe;
   text-align: center;
   font-size: 18px;
-  transition: 0.3s;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smoother bounce transition */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(38, 173, 225, 0.6);
+  transform: translateY(-8px);
+  border-color: #26ade1;
+  box-shadow: 0 12px 30px rgba(38, 173, 225, 0.4); /* Softer premium shadow */
 }
 
 .icon-card {
   background: #202736;
-  border: 2px solid #26ade1;
-  border-radius: 12px;
-
-  height: 75px; /* 🔥 kart yüksekliği */
+  border: 1px solid rgba(38, 173, 225, 0.2);
+  border-radius: 16px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .icon-card2 {
-  border: 2px solid #202736ff;
-  border-radius: 12px;
-
-  height: 75px; /* 🔥 kart yüksekliği */
+  border: 1px solid #2a3245;
+  border-radius: 16px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  background: rgba(32, 39, 54, 0.5); /* Slight glass effect */
 }
 
 .icon-card img {
@@ -80,9 +80,21 @@ body {
   object-fit: contain;
 }
 
+.icon-card2 img {
+  width: 48px; /* 🔥 icon boyutu */
+  height: 48px;
+  object-fit: contain;
+}
+
 .icon-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 18px rgba(38, 173, 225, 0.6);
+  transform: translateY(-5px) scale(1.02);
+  border-color: #26ade1;
+  box-shadow: 0 10px 25px rgba(38, 173, 225, 0.4);
+}
+.icon-card2:hover {
+  transform: translateY(-5px);
+  border-color: #9fdd5b;
+  box-shadow: 0 10px 25px rgba(159, 221, 91, 0.2);
 }
 
 .counters {
@@ -93,12 +105,16 @@ body {
 }
 
 .service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 16px !important; /* Overriding inline styles for premium look */
+  border: 1px solid rgba(38, 173, 225, 0.2) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 30px rgba(38, 173, 225, 0.4);
+  border-color: #26ade1 !important;
 }
 
 /* SVG rengi değişsin */
@@ -110,10 +126,13 @@ body {
   fill: #26ade1; /* hover rengi */
 }
 
+.ecard {
+  transition: all 0.4s ease;
+  border-radius: 16px;
+}
 .ecard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px #9fdd5b;
-  transition: 0.3s;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(159, 221, 91, 0.3);
 }
 .carousel-wrapper {
   padding: 60px 0;
@@ -121,9 +140,15 @@ body {
 
 .carousel-card {
   background: #191f2b;
-  border: 2px solid #202736;
-  border-radius: 14px;
+  border: 1px solid #2a3245;
+  border-radius: 16px;
   padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.carousel-card:hover {
+  border-color: #26ade1;
+  transform: translateY(-4px);
 }
 
 .title {
@@ -196,4 +221,32 @@ li::marker {
 }
 .custom-input::placeholder {
   color: #7f8fa6;
+}
+
+/* Premium Buttons & Links */
+.nav-social-icon {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.nav-social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+  color: #9fdd5b !important;
+  opacity: 1;
+}
+
+.custom-btn {
+  background: rgba(32, 39, 54, 0.8);
+  border: 1px solid #2a3245;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.custom-btn:hover {
+  background: #202736;
+  border-color: #9fdd5b;
+  box-shadow: 0 8px 25px rgba(159, 221, 91, 0.2);
+  transform: translateY(-3px);
+}
+.custom-btn:hover span {
+  color: #fcfdfe !important;
 }

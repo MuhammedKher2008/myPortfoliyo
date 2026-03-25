@@ -23,8 +23,8 @@ export default function Navbar({
   return (
     <>
       <div
-        className="row mt-5"
-        style={{ border: "3px solid #202736ff", borderRadius: "10px" }}
+        className="row mt-5 shadow-lg" /* Added Bootstrap shadow-lg for depth */
+        style={{ border: "1px solid #2a3245", borderRadius: "16px" }} /* Softened border, increased radius */
       >
         {/* LANGUAGE */}
         <div
@@ -70,9 +70,9 @@ export default function Navbar({
                 <li>
                   <button
                     className="dropdown-item"
-                    onClick={() => setLang("kr")}
+                    onClick={() => setLang("tr")}
                   >
-                    KR
+                    TR
                   </button>
                 </li>
               </ul>
@@ -85,7 +85,7 @@ export default function Navbar({
           className="col-md-10 py-3 d-flex align-items-center"
           style={{ background: "#191f2b" }}
         >
-          <img width={50} src={mylogo} alt="logo" />
+          <img loading="lazy"width={50} src={mylogo} alt="logo" />
 
           {/* DESKTOP MENU */}
           <ul className="menu flex-grow-1 d-none d-md-flex justify-content-center gap-3 list-unstyled m-0 p-0">
@@ -107,11 +107,7 @@ export default function Navbar({
               </a>
             </li>
 
-            <li>
-              <a href="#" style={linkStyle} onClick={onEducationClick}>
-                {translations[lang].Education}
-              </a>
-            </li>
+        
 
             <li>
               <a href="#" style={linkStyle} onClick={onProjectsClick}>
@@ -139,10 +135,10 @@ export default function Navbar({
 
           {/* DESKTOP SOCIAL */}
           <div className="d-none d-md-flex align-items-center gap-3">
-            <a className="text-white" href="#">
+            <a className="text-white nav-social-icon" href="#"> {/* Added custom nav-social-icon class */}
               <i className="fa-brands fa-github fs-4 icons"></i>
             </a>
-            <a className="text-white" href="#">
+            <a className="text-white nav-social-icon" href="#"> {/* Added custom nav-social-icon class */}
               <i className="fa-brands fa-linkedin fs-4 icons"></i>
             </a>
           </div>
@@ -172,7 +168,7 @@ export default function Navbar({
         style={{ background: "#191f2b", color: "#fcfdfe" }}
       >
         <div className="offcanvas-header">
-          <img width={40} src={mylogo} alt="logo" />
+          <img loading="lazy"width={40} src={mylogo} alt="logo" />
           <button
             type="button"
             className="btn-close btn-close-white"
@@ -210,10 +206,10 @@ export default function Navbar({
           />
 
           <div className="d-flex gap-4">
-            <a className="text-white" href="#">
+            <a className="text-white nav-social-icon" href="#"> {/* Added custom nav-social-icon class */}
               <i className="fa-brands fa-github fs-4 icons"></i>
             </a>
-            <a className="text-white" href="#">
+            <a className="text-white nav-social-icon" href="#"> {/* Added custom nav-social-icon class */}
               <i className="fa-brands fa-linkedin fs-4 icons"></i>
             </a>
           </div>

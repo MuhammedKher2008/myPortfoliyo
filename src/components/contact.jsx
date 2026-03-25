@@ -1,4 +1,4 @@
-export default function Contact({ContactRef}) {
+export default function Contact({ ContactRef }) {
   const itemStyle = {
     display: "flex",
     alignItems: "center",
@@ -15,7 +15,7 @@ export default function Contact({ContactRef}) {
     alignItems: "center",
     justifyContent: "center",
     border: "1px solid #2e323c",
-    color:"#9fdd5b"
+    color: "#9fdd5b",
   };
 
   const labelStyle = {
@@ -31,9 +31,21 @@ export default function Contact({ContactRef}) {
     letterSpacing: "0.3px",
   };
   return (
-    <div className="row mt-5"ref={ContactRef} >
+    <div
+      className="row mt-5 p-4 shadow-lg"
+      ref={ContactRef}
+      style={{
+        border: "1px solid #2a3245",
+        borderRadius: "16px",
+        background: "#191f2b",
+      }}
+    >
+      {" "}
+      {/* Added premium container styling to match other sections */}
       <div className="col-md-12">
-        <h3 className="mt-4" style={{ color: "#9fdd5b" }}>Let’s connect</h3>
+        <h3 className="mt-4" style={{ color: "#9fdd5b" }}>
+          Let’s connect
+        </h3>
       </div>
       <div className="row mt-3 ">
         <div className="col-md-6">
@@ -138,44 +150,42 @@ export default function Contact({ContactRef}) {
             {/* Phone */}
             <div style={itemStyle}>
               <div style={iconBox}>
-                <i  className="ri-phone-fill text-primary-2 " style={{fontSize:"25px"}}></i>
+                <i
+                  className="ri-phone-fill text-primary-2 "
+                  style={{ fontSize: "25px" }}
+                ></i>
               </div>
               <div>
                 <div style={labelStyle}>Phone Number</div>
-                <div style={valueStyle}>+1-234-567-8901</div>
+                <div style={valueStyle}>+90 (551) 059 0582</div>
               </div>
             </div>
 
             {/* Email */}
             <div style={itemStyle}>
               <div style={iconBox}>
-                <i  className="ri-mail-fill text-primary-2 fs-26" style={{fontSize:"25px"}}></i>
+                <i
+                  className="ri-mail-fill text-primary-2 fs-26"
+                  style={{ fontSize: "25px" }}
+                ></i>
               </div>
               <div>
                 <div style={labelStyle}>Email</div>
-                <div style={valueStyle}>contact@william.design</div>
-              </div>
-            </div>
-
-            {/* Skype */}
-            <div style={itemStyle}>
-              <div style={iconBox}>
-            <i  className="ri-skype-fill text-primary-2 fs-26" style={{fontSize:"25px"}}></i>
-              </div>
-              <div>
-                <div style={labelStyle}>Skype</div>
-                <div style={valueStyle}>WilliamDesignUX</div>
+                <div style={valueStyle}>muhammedkher27@gmail.com</div>
               </div>
             </div>
 
             {/* Address */}
             <div style={{ ...itemStyle, marginBottom: 0 }}>
               <div style={iconBox}>
-            <i  className="ri-map-2-fill text-primary-2 fs-26" style={{fontSize:"25px"}}></i>
+                <i
+                  className="ri-map-2-fill text-primary-2 fs-26"
+                  style={{ fontSize: "25px" }}
+                ></i>
               </div>
               <div>
                 <div style={labelStyle}>Address</div>
-                <div style={valueStyle}>0811 Erdman Prairie, Joaville CA</div>
+                <div style={valueStyle}>Istanbul / turkey</div>
               </div>
             </div>
           </div>

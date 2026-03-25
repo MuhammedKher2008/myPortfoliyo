@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import icon1 from "../assets/icon-1.svg";
-import icon2 from "../assets/icon-2.svg";
-import icon3 from "../assets/icon-3.svg";
-import icon4 from "../assets/icon-4.svg";
-import icon5 from "../assets/icon-5.svg";
+import icon1 from "../assets/html.svg";
+import icon2 from "../assets/bootstrap.svg";
+import icon3 from "../assets/javascript.svg";
+import icon4 from "../assets/react.svg";
+import icon5 from "../assets/mysql.svg";
 // Swiper stilleri (ŞART)
 import "swiper/css";
 
@@ -34,31 +34,31 @@ export default function CardSlider() {
     >
       <SwiperSlide className="icon-slide">
         <div className="icon-card">
-          <img src={icon1} alt="icon1" />
+          <img loading="lazy"loading="lazy" src={icon1} alt="html icon" />
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide">
         <div className="icon-card">
-          <img src={icon2} alt="icon1" />{" "}
+          <img loading="lazy"loading="lazy" src={icon2} alt="bootstrap icon" />{" "}
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide">
         <div className="icon-card">
-          <img src={icon3} alt="icon1" />{" "}
+          <img loading="lazy"loading="lazy" src={icon3} alt="javascript icon" />{" "}
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide">
         <div className="icon-card">
-          <img src={icon4} alt="icon1" />{" "}
+          <img loading="lazy"loading="lazy" src={icon4} alt="react icon" />{" "}
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide">
         <div className="icon-card">
-          <img src={icon5} alt="icon1" />{" "}
+          <img loading="lazy"loading="lazy" src={icon5} alt="mysql icon" />{" "}
         </div>
        
       </SwiperSlide>

@@ -1,10 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import mpi1 from "../assets/mpi1.svg";
-import mpi2 from "../assets/mpi2.svg";
-import mpi3 from "../assets/mpi3.svg";
-import mpi4 from "../assets/mpi4.svg";
-import mpi5 from "../assets/mpi5.svg";
+
+
+import mpi1 from "../assets/html.svg";
+import mpi2 from "../assets/bootstrap.svg";
+import mpi3 from "../assets/javascript.svg";
+import mpi4 from "../assets/react.svg";
+import mpi5 from "../assets/typescript-icon.svg"
 
 import "swiper/css";
 
@@ -35,31 +37,31 @@ export default function SkillsSlider() {
     >
       <SwiperSlide className="icon-slide2">
         <div className="icon-card2">
-          <img src={mpi1} alt="react" />
+          <img loading="lazy"  className="img-fluid" src={mpi1} alt="react" style={{objectFit:"cover"}} />
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide2">
         <div className="icon-card2">
-          <img src={mpi2} alt="react" />
+          <img loading="lazy"  className="img-fluid" src={mpi2} alt="react" />
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide2">
         <div className="icon-card2">
-          <img src={mpi3} alt="react" />
+          <img loading="lazy"  className="img-fluid" src={mpi3} alt="react" />
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide2">
         <div className="icon-card2">
-          <img src={mpi4} alt="react" />
+          <img loading="lazy"  className="img-fluid" src={mpi4} alt="react" />
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="icon-slide2">
         <div className="icon-card2">
-          <img src={mpi5} alt="react" />
+          <img loading="lazy"  className="img-fluid" src={mpi5} alt="react" />
         </div>
       </SwiperSlide>
     </Swiper>

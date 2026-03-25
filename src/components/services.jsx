@@ -5,11 +5,11 @@ export default function Services({ ServicesRef }) {
   return (
     <div
       ref={ServicesRef}
-      className="row mt-5 aaaa"
+      className="row mt-5 p-4 shadow-lg aaaa" /* Added p-4 and shadow-lg for structural consistency */
       style={{
         background: "#191f2b",
-        border: "2px solid #202736ff",
-        borderRadius: "10px",
+        border: "1px solid #2a3245" /* Softened border to match new theme */,
+        borderRadius: "16px" /* Rounded corners for premium feel */,
       }}
     >
       <div className="d-flex mt-4 align-items-center justify-content-center">
@@ -110,13 +110,12 @@ export default function Services({ ServicesRef }) {
 
               {/* Description */}
               <p className="card-text " style={{ color: "#8f8f92" }}>
-                {translations[lang].sc2}{" "}
-                <span style={{ color: "#26ade1" }}>MySQL</span>,{" "}
-                <span style={{ color: "#26ade1" }}>MongoDB</span>,{" "}
+                {translations[lang].sc2}
+                <span style={{ color: "#26ade1" }}>MySQL</span>
                 {translations[lang].sc2_2}
-                <span style={{ color: "#26ade1" }}> PostgreSQL</span>,
-              </p>
-            </div>
+                <span style={{ color: "#26ade1" }}>MongoDB</span>
+                </p>
+              </div>
           </div>
         </div>
         <div className="col-6  col-lg-4">
@@ -183,8 +182,7 @@ export default function Services({ ServicesRef }) {
               {/* Description */}
               <p className="card-text " style={{ color: "#8f8f92" }}>
                 {translations[lang].sc4}{" "}
-                <span style={{ color: "#26ade1" }}>NodeJS</span>,{" "}
-                <span style={{ color: "#26ade1" }}>Express</span>,{" "}
+                <span style={{ color: "#26ade1" }}>Laravel</span>,{" "}
               </p>
             </div>
           </div>
@@ -264,9 +262,7 @@ export default function Services({ ServicesRef }) {
             {translations[lang].MySkillsson1}{" "}
             <span style={{ color: "#fcfdfe" }}>
               {translations[lang].MySkillsson2}
-            </span>{" "}
-            and
-            {translations[lang].MySkillsson3}
+            </span>{" "}            {translations[lang].MySkillsson3}
             <span style={{ color: "#9fdd5b" }}>
               {translations[lang].MySkillsson4}
             </span>

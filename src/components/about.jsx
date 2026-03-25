@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import people from "../assets/people.png";
 import CardSlider from "./cardslider";
 import { LangContext } from "../contexts/LangContexts";
 import { useContext } from "react";
@@ -63,15 +62,15 @@ export default function AboutMe() {
   const text5 = "</p>";
   return (
     <div
-      className="row mt-5 aaaa"
+      className="row mt-5 p-4 shadow-lg aaaa" /* Added p-4 and shadow-lg for better spacing and depth */
       style={{
         background: "#191f2b",
-        border: "2px solid #202736ff",
-        borderRadius: "10px",
+        border: "1px solid #2a3245", /* Softened border */
+        borderRadius: "16px", /* Increased border radius */
       }}
     >
-      <div className="col-lg-5 d-flex  align-content-center p-5">
-        <img className="img-fluid my-5" src={altigenLogo} alt="" />
+      <div className="col-lg-5 d-flex align-items-center justify-content-center p-5">
+        <img loading="lazy"className="img-fluid my-5" src={altigenLogo} alt="" />
       </div>
       <div className="col-lg-6 mt-5">
         <span className="spans" style={{ color: "#26ade1" }}>
@@ -84,7 +83,7 @@ export default function AboutMe() {
         <div className="row">
           <div className="col-lg-8">
             <h1 className="text-capitalize" style={{ fontSize: "50px" }}>
-              {translations[lang].senior} <span style={{ color: "#9fdd5b" }}>{text3}</span> {translations[lang].wad}
+              {translations[lang].junior} <span style={{ color: "#9fdd5b" }}>{text3}</span> {translations[lang].wad}
             </h1>
           </div>
         </div>
@@ -93,7 +92,7 @@ export default function AboutMe() {
           {translations[lang].techlonogies}{" "}
           <span style={{ color: "#26ade1" }}>
             {" "}
-            NodeJS, React, Angular, and Laravel...{" "}
+            javascript, React, mySql, and Laravel...{" "}
           </span>{" "}
           {translations[lang].techlonogies2}{" "}
           <span style={{ color: "#26ade1" }}> {text5}</span>{" "}
@@ -112,9 +111,9 @@ export default function AboutMe() {
         <a
           href="/pdf-sample_0.pdf"
           download="/pdf-sample_0.pdf"
-          className="btn  mt-4 "
+          className="btn mt-4 px-4 py-2 custom-btn shadow-sm" /* Added custom-btn and padding for premium feel */
         >
-          <span style={{ color: "#8f8f92" }}>
+          <span style={{ color: "#8f8f92", fontWeight: "500", letterSpacing: "0.5px" }}>
             {" "}
             <i className="ri-download-line" style={{ color: "#9fdd5b" }}></i>{" "}
             [{translations[lang].downloadmycv}]

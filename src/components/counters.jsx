@@ -6,11 +6,9 @@ export default function Counters() {
   const [counter1, setCounter1] = useState(0);
   const [counter2, setCounter2] = useState(0);
   const [counter3, setCounter3] = useState(0);
-  const [counter4, setCounter4] = useState(0);
-  const target1 = 12;
-  const target2 = 250;
-  const target3 = 680;
-  const target4 = 18;
+  const target1 = 1;
+  const target2 = 15;
+  const target3 = 7;
 
   useEffect(() => {
     if (counter1 < target1) {
@@ -39,15 +37,6 @@ export default function Counters() {
     }
   }, [counter3]);
 
-  useEffect(() => {
-    if (counter4 < target4) {
-      const timer = setTimeout(() => {
-        setCounter4(counter4 + 1);
-      }, 20);
-      return () => clearTimeout(timer);
-    }
-  }, [counter4]);
-
   return (
     <div
       className="row mt-5 counters d-flex justify-content-center p-4"
@@ -57,7 +46,7 @@ export default function Counters() {
       }}
     >
       <div className="col-6 col-md-3 ">
-        <div  className="ms-4" >
+        <div className="ms-4">
           <i
             style={{ color: "#9fdd5b", fontSize: "25px" }}
             className="ri-shape-line  "
@@ -69,7 +58,7 @@ export default function Counters() {
         </div>
       </div>
       <div className="col-6 col-md-3">
-        <div  className="ms-4" >
+        <div className="ms-4">
           <i
             style={{ color: "#9fdd5b", fontSize: "25px" }}
             className="ri-computer-line "
@@ -81,7 +70,7 @@ export default function Counters() {
         </div>
       </div>
       <div className="col-6 col-md-3">
-        <div  className="ms-4" >
+        <div className="ms-4">
           <i
             style={{ color: "#9fdd5b", fontSize: "25px" }}
             className="ri-service-line    "
@@ -90,18 +79,6 @@ export default function Counters() {
             {counter3} <span style={{ color: "#8f8f92" }}>+</span>
           </h2>
           <h4>{translations[lang].hc}</h4>
-        </div>
-      </div>
-      <div className="col-6 col-md-3 ">
-        <div className="ms-4" >
-          <i
-            style={{ color: "#9fdd5b", fontSize: "25px" }}
-            className="ri-award-line    "
-          ></i>
-          <h2 style={{ fontSize: "50px" }}>
-            {counter4} <span style={{ color: "#8f8f92" }}>+</span>
-          </h2>
-          <h4>{translations[lang].aw}</h4>
         </div>
       </div>
     </div>

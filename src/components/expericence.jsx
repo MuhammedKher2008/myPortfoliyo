@@ -1,6 +1,5 @@
-import google1 from "../assets/google1.svg";
-import twitter1 from "../assets/twitter1.svg";
-import amazon1 from "../assets/amazon1.svg";
+import alaaeldinalhallaklogo from "../assets/alaaeldinalhallaklogo.png";
+
 import { useContext } from "react";
 import { LangContext } from "../contexts/LangContexts";
 export default function Experience({ExperienceRef}) {
@@ -8,7 +7,7 @@ export default function Experience({ExperienceRef}) {
   return (
     <div className="row mt-5" ref={ExperienceRef}>
       <div className="col-md-12">
-        <div className="row" style={{ border: "2px solid #202736ff" }}>
+        <div className="row p-4 shadow-lg" style={{ border: "1px solid #2a3245", borderRadius: "16px", background: "#191f2b" }}> {/* Added Bootstrap padding, shadow, and custom premium borders for consistency */}
           <div className="col-lg-6">
             <div className="d-flex mt-4 align-items-center ms-5 mb-3 ">
               <svg
@@ -36,7 +35,7 @@ export default function Experience({ExperienceRef}) {
             </div>
             <h3 style={{ fontSize: "35px" }} className="ms-5">
               {" "}
-              +12{" "}
+              +1{" "}
               <span style={{ color: "#8f8f92" }}>
                 {translations[lang].yo}
               </span>{" "}
@@ -62,8 +61,8 @@ export default function Experience({ExperienceRef}) {
                 >
                   {/* Logo */}
                   <img
-                    src={google1}
-                    alt="Google"
+                    src={alaaeldinalhallaklogo}
+                    alt="Alaa Eldin Al Hallak"
                     style={{
                       width: "40px",
                       height: "40px",
@@ -73,84 +72,15 @@ export default function Experience({ExperienceRef}) {
                   {/* Text */}
                   <div>
                     <h6 style={{ marginBottom: "4px", fontWeight: "600" }}>
-                      Google
+                      Alaa Eldin AlHallak
                     </h6>
                     <span style={{ fontSize: "14px", color: "#9aa4b2" }}>
-                      2018 – {translations[lang].present}
+                      febuary – {translations[lang].present}
                     </span>
                   </div>
                 </div>
               </div>
-              <div
-                className="card ms-5 ecard mb-4  "
-                style={{
-                  maxWidth: "420px",
-                  background: "#191f2b",
-                  border: "2px solid #202736ff",
-                  borderRadius: "10px",
-                  color: "#fff",
-                }}
-              >
-                <div
-                  className="card-body d-flex align-items-center"
-                  style={{ gap: "12px" }}
-                >
-                  {/* Logo */}
-                  <img
-                    src={twitter1}
-                    alt="twitter"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                    }}
-                  />
-
-                  {/* Text */}
-                  <div>
-                    <h6 style={{ marginBottom: "4px", fontWeight: "600" }}>
-                      Twitter(X)
-                    </h6>
-                    <span style={{ fontSize: "14px", color: "#9aa4b2" }}>
-                      2015 – 2018
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="card ms-5 ecard  mb-4 "
-                style={{
-                  maxWidth: "420px",
-                  background: "#191f2b",
-                  border: "2px solid #202736ff",
-                  borderRadius: "10px",
-                  color: "#fff",
-                }}
-              >
-                <div
-                  className="card-body d-flex align-items-center"
-                  style={{ gap: "12px" }}
-                >
-                  {/* Logo */}
-                  <img
-                    src={amazon1}
-                    alt="Amazon"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                    }}
-                  />
-
-                  {/* Text */}
-                  <div>
-                    <h6 style={{ marginBottom: "4px", fontWeight: "600" }}>
-                      Amazon
-                    </h6>
-                    <span style={{ fontSize: "14px", color: "#9aa4b2" }}>
-                      2010 – 2015
-                    </span>
-                  </div>
-                </div>
-              </div>
+              
             </div>
             <div className="col-md-5">
               <h6
@@ -176,28 +106,28 @@ export default function Experience({ExperienceRef}) {
               </ul>
               <div className=" my-4">
                 <span
-                  className="p-2  me-2 "
+                  className="p-2 text-capitalize  me-2 "
                   style={{ color: "#8f8f92", border: "1px solid #8f8f92" }}
                 >
-                  python
+                  JavaScript
                 </span>
                 <span
-                  className="p-2  me-2 "
+                  className="p-2 text-capitalize  me-2 "
                   style={{ color: "#8f8f92", border: "1px solid #8f8f92" }}
                 >
-                  angular
+                  Laravel
                 </span>
                 <span
-                  className="p-2  me-2 "
+                  className="p-2 text-capitalize  me-2 "
                   style={{ color: "#8f8f92", border: "1px solid #8f8f92" }}
                 >
-                  react
+                  React
                 </span>
                 <span
-                  className="p-2  me-2 "
+                  className="p-2 text-capitalize  me-2 "
                   style={{ color: "#8f8f92", border: "1px solid #8f8f92" }}
                 >
-                  javascript
+                  TypeScript
                 </span>
               </div>
             </div>
