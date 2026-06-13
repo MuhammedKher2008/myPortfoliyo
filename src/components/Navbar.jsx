@@ -135,10 +135,10 @@ export default function Navbar({
 
           {/* DESKTOP SOCIAL */}
           <div className="d-none d-md-flex align-items-center gap-3">
-            <a className="text-white nav-social-icon" href="#"> {/* Added custom nav-social-icon class */}
+            <a className="text-white nav-social-icon" href="https://github.com/MuhammedKher2008"> {/* Added custom nav-social-icon class */}
               <i className="fa-brands fa-github fs-4 icons"></i>
             </a>
-            <a className="text-white nav-social-icon" href="#"> {/* Added custom nav-social-icon class */}
+            <a className="text-white nav-social-icon" href="https://www.linkedin.com/in/muhammed-tammo-a272a6280/"> {/* Added custom nav-social-icon class */}
               <i className="fa-brands fa-linkedin fs-4 icons"></i>
             </a>
           </div>

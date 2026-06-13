@@ -16,13 +16,13 @@ export default function Footer() {
       </div>
       <div className="col-md-12 text-center mt-4 mb-4 ">
         <div className="d-none d-md-flex align-items-center justify-content-center gap-3">
-          <a className="text-white text-decoration-none" href="#">
+          <a className="text-white text-decoration-none" href="https://www.facebook.com/muhammed.kher.3/">
             <i className="ri-facebook-circle-fill  fs-4 icons"></i>
           </a>
-          <a className="text-white" href="#">
+          <a className="text-white" href="https://github.com/MuhammedKher2008">
             <i className="fa-brands fa-github fs-4 icons"></i>
           </a>
-          <a className="text-white" href="#">
+          <a className="text-white" href="https://www.linkedin.com/in/muhammed-tammo-a272a6280/">
             <i className="fa-brands fa-linkedin fs-4 icons"></i>
           </a>
         </div>
