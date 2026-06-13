@@ -354,7 +354,7 @@ function App() {
           {/* <Education EducationRef={EducationRef} /> */}
           <Projects ProjectsRef={ProjectsRef} />
           <MySkills MySkillsRef={MySkillsRef} />
-          <Blog BlogRef={BlogRef} />
+          {/* <Blog BlogRef={BlogRef} /> */}
           <Contact ContactRef={ContactRef} />
           <Footer />
         </div>
